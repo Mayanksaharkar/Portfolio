@@ -42,12 +42,12 @@ function Header() {
             </li>
           </ul>
         </div>
-        <Link to='/home' className='btn btn-ghost text-2xl text-nuetral'>
+        <Link to='/home' className='btn btn-ghost text-lg text-nuetral'>
           Mayank Saharkar
         </Link>
       </div>
       <div className='navbar-center hidden lg:flex'>
-        <ul className='menu menu-horizontal px-1 font-semibold text-primary text-lg'>
+        <ul className='menu menu-horizontal px-1 font-semibold text-primary '>
           <li>
             <Link to='/home'>home</Link>
           </li>
@@ -63,7 +63,7 @@ function Header() {
       </div>
       <div className='navbar-end'>
         
-        <a className='btn bg-primary text-primary-content opacity-85 drop-shadow-lg hover:text-primary text-lg'>
+        <a className='btn bg-primary text-primary-content opacity-85 drop-shadow-lg hover:text-primary '>
           Contact
         </a>
       </div>
