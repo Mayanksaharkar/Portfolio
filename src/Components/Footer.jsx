@@ -12,9 +12,13 @@ function Footer() {
             <br />
             Feel free to reach out and contact me.
           </div>
-          <button className='btn bg-primary text-base-100 rounded-xl drop-shadow-2xl hover:bg-base-100 hover:text-primary lg:mt-4 text-2xl'>
+          <a
+            href='mailto:mayanksaharkar@gmail.com?subject=Hello!'
+            target='_blank'
+            className='btn bg-primary text-base-100 rounded-xl drop-shadow-2xl hover:bg-base-100 hover:text-primary lg:mt-4 text-2xl' rel="noreferrer"
+          >
             Contact
-          </button>
+          </a>
         </div>
       </aside>
       <nav>

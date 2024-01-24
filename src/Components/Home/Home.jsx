@@ -1,15 +1,14 @@
-import heroImg from "../../assets/heroImg.png";
 function Home() {
   return (
     <section className=''>
       <div className='grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12'>
         <div className='mr-auto place-self-center lg:col-span-7'>
           <h1 className='max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl  '>
-            <span className='text-neutral'>🙋‍♂️ Hi, I'm</span>
+            <span className='text-neutral'>🙋‍♂️ Hi, I&apos;m</span>
             <span className='text-primary'> Mayank</span>
           </h1>
           <p className='max-w-2xl mb-6 font-light  lg:mb-8 md:text-lg lg:text-xl '>
-            Data detective🕵️& web builder 🏗️, turning numbers into magic on the
+            Data detective 🕵️ & web builder 🏗️, turning numbers into magic on the
             screen.
           </p>
           <button className='btn  bg-primary text-base-100 shadow-neutral hover:text-primary shadow-sm border-none rounded-lg lg:text-2xl md:text-md sm:text-sm'>

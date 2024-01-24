@@ -58,7 +58,7 @@ function Header() {
         </ul>
       </div>
       <div className='navbar-end'>
-        <a className='btn bg-primary border-none text-primary-content  drop-shadow-md hover:text-primary '>
+        <a href="mailto:mayanksaharkar@gmail.com?subject=Hello!" target="_blank" className='btn bg-primary border-none text-primary-content  drop-shadow-md hover:text-primary ' rel="noreferrer">
           Contact
         </a>
       </div>
