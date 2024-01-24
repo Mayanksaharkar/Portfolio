@@ -1,10 +1,6 @@
 import { Link } from "react-router-dom";
 
 function Header() {
-
-
-
- 
   return (
     <div className='navbar bg-base-100 drop-shadow-lg rounded-lg'>
       <div className='navbar-start '>
@@ -62,8 +58,7 @@ function Header() {
         </ul>
       </div>
       <div className='navbar-end'>
-        
-        <a className='btn bg-primary text-primary-content opacity-85 drop-shadow-lg hover:text-primary '>
+        <a className='btn bg-primary border-none text-primary-content  drop-shadow-md hover:text-primary '>
           Contact
         </a>
       </div>
