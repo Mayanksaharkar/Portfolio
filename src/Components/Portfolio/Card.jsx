@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 function Card(props) {
   return (
     <div className="card bg-base-300 w-9">
@@ -8,6 +9,7 @@ function Card(props) {
           <a
             className='mt-5 px-8 py-3 rounded-full bg-primary hover:bg-primary duration-300'
             href='#'
+            
           >
             Code
           </a>

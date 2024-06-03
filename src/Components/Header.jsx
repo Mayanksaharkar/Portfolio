@@ -117,13 +117,12 @@ function Header() {
     <>
       <Navbar className='border-none sticky flex-row shadow-base-200  pt-1 align-middle justify-between top-0 z-30 h-max max-w-full px-4 lg:px-8 lg:py-2'>
         <div className='flex items-center justify-between text-primary rounded-md'>
-          <Typography
-            as='a'
-            href='#'
+          <Link
+            to={"/"}
             className='mr-4 cursor-pointer py-1.5  font-bold lg:text-2xl md:text-lg sm:text-md'
           >
             Mayank Saharkar
-          </Typography>
+          </Link>
           <div className='flex items-center gap-4'>
             <div className='mr-4 hidden   lg:block'>{navList}</div>
 

@@ -1,9 +1,11 @@
-import React from 'react'
+import PageContainer from "../PageContainer";
 
 function About() {
   return (
-    <div>About</div>
-  )
+    <PageContainer>
+      <div>About</div>
+    </PageContainer>
+  );
 }
 
-export default About
+export default About;
