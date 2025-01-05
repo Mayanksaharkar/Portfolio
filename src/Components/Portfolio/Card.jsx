@@ -4,13 +4,13 @@ function Card(props) {
     <div className="card bg-base-300 w-fit rounded-lg">
       <div className="group relative w-96 rounded-t-lg">
         <img className="w-full object-cover rounded-t-lg" src={props.img} />
-        <div className="absolute top-0 left-0 w-full h-0  flex flex-col justify-center items-center bg-indigo-700 opacity-0 group-hover:h-full group-hover:opacity-100 duration-500">
+        <div className="absolute top-0 left-0 w-full h-0  flex flex-col justify-center items-center rounded-t-lg bg-indigo-700 opacity-0 group-hover:h-full group-hover:opacity-100 duration-500">
           <h1 className="text-2xl text-white">{props.title}</h1>
           <a
             className="mt-5 px-8 py-3 rounded-full   duration-300"
             href={props.gh}
-            target="_blank" // Fixed the target attribute value
-            rel="noopener noreferrer" // Added security for external links
+            target="_blank" 
+            rel="noopener noreferrer"
           >
             <span className="w-full h-full flex items-center justify-center">
               <svg
@@ -26,7 +26,7 @@ function Card(props) {
         </div>
       </div>
       <div className="card-body">
-        <a href={props.gh} target="_blank" className="card-title">{props.title}</a>
+        <a href={props.gh} target="blank" className="card-title">{props.title}</a>
       </div>
     </div>
   );

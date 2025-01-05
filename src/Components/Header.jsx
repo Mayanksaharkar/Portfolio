@@ -41,7 +41,7 @@ function Header() {
         color='blue-gray'
         className='p-1 font-normal'
       >
-        <Link to='/home' className='flex items-center'>
+        <Link to='/home' className='flex items-center text-base-content'>
           Home
         </Link>
       </Typography>
@@ -51,7 +51,7 @@ function Header() {
         color='blue-gray'
         className='p-1 font-normal'
       >
-        <Link to='/portfolio' className='flex items-center'>
+        <Link to='/portfolio' className='flex items-center text-base-content'>
           Portfolio
         </Link>
       </Typography>
@@ -61,7 +61,7 @@ function Header() {
         color='blue-gray'
         className='p-1 font-normal'
       >
-        <Link to='/about' className='flex items-center '>
+        <Link to='/about' className='flex items-center text-base-content'>
           About
         </Link>
       </Typography>
@@ -115,7 +115,7 @@ function Header() {
 
   return (
     <>
-      <Navbar className='border-none sticky flex-row shadow-base-200  pt-1 align-middle justify-between top-0 z-30 h-max max-w-full px-4 lg:px-8 lg:py-2'>
+      <Navbar className='border-none sticky flex-row shadow-base-200   align-middle justify-between top-0 z-30 h-max max-w-full px-4 lg:px-8 lg:py-2'>
         <div className='flex items-center justify-between text-primary rounded-md'>
           <Link
             to={"/"}
