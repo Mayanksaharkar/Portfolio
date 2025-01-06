@@ -115,8 +115,8 @@ function Header() {
 
   return (
     <>
-      <Navbar className='border-none sticky flex-row shadow-base-200   align-middle justify-between top-0 z-30 h-max max-w-full px-4 lg:px-8 lg:py-2'>
-        <div className='flex items-center justify-between text-primary rounded-md'>
+      <Navbar className='border-none sticky flex-row shadow-base-200   align-middle justify-between top-0 z-30 h-max max-w-full px-4 py-4 pb-2 lg:px-8 lg:py-2'>
+        <div className='flex items-center justify-between text-primary  rounded-md'>
           <Link
             to={"/"}
             className='mr-4 cursor-pointer py-1.5  font-bold lg:text-2xl md:text-lg sm:text-md'
@@ -128,7 +128,7 @@ function Header() {
 
             <IconButton
               variant='text'
-              className='ml-auto h-6 w-6 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden'
+              className=' items-center h-full justify-center flex text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden'
               ripple={false}
               onClick={() => setOpenNav(!openNav)}
             >
