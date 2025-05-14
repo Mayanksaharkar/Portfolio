@@ -42,10 +42,9 @@ function Layout() {
       </div>
 
       <div
-        className="sticky top-0 z-10 backdrop-blur-sm lg:w-[80%] w-full border border-neutral-content lg:rounded-3xl  bg-opacity-50"
+        className="top-0 z-10 backdrop-blur-sm lg:w-[80%] w-full border border-neutral-content lg:rounded-3xl bg-opacity-50"
         style={{
-          position: "sticky",
-          top: 0,
+          position: "relative",
           backgroundColor: "",
         }}
       >
@@ -59,7 +58,7 @@ function Layout() {
         <Outlet />
       </div>
 
-      <div className="drop-shadow-xl mb-8 w-full">
+      <div className="drop-shadow-xl w-full">
         <Footer />
       </div>
     </div>

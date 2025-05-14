@@ -12,6 +12,9 @@ import { AnimatePresence } from "framer-motion";
 import Header from "./Components/Header";
 import Footer from "./Components/Footer";
 import Layout from "./Components/Layout";
+import Skills from "./Components/Skills/Skills";
+import Education from "./Components/Education/Education";
+import ScrollToTop from "./Components/ScrollToTop";
 AnimatePresence;
 function App() {
   const router = createBrowserRouter([
@@ -30,6 +33,14 @@ function App() {
         {
           path: "/portfolio",
           element: <Portfolio />,
+        },
+        {
+          path: "/skills",
+          element: <Skills />,
+        },
+        {
+          path: "/education",
+          element: <Education />,
         },
         {
           path: "/about",

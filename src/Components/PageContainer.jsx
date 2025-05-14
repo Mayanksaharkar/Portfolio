@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 
-// eslint-disable-next-line react/prop-types
 function PageContainer({ children }) {
   const transition = { duration: 0.5, ease: "easeOut" };
 
