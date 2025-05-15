@@ -1,22 +1,29 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="preload"
+      href="/myFont.ttf"
+      as="font"
+      type="font/ttf"
+      crossorigin="anonymous"
+    />
 
-<head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/favicon.png" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mayank Saharkar</title>
-  <style>
-    @font-face {
-      font-family: "myFont";
-      src: url('/myFont.ttf') format("truetype");
-    }
-  </style>
-</head>
+    <title>Mayank Saharkar</title>
+    <style>
+      @font-face {
+        font-family: "myFont";
+        src: url("/myFont.ttf") format("truetype");
+        font-display: swap;
+      }
+    </style>
+  </head>
 
-<body  style="min-height: 100vh; font-family: myFont;">
-  <div id="root"></div>
-  <script type="module" src="/src/main.jsx"></script>
-</body>
-
+  <body style="min-height: 100vh; font-family: myFont">
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>

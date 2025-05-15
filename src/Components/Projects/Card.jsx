@@ -5,6 +5,7 @@ function Card(props) {
       <div className="group relative w-full sm:w-96 rounded-t-lg overflow-hidden">
         <img
           className="w-full bg-blue-400 lg:min-h-64 h-44 object-cover rounded-t-lg hover:scale-110 duration-300 "
+         loading="lazy"
           src={props.img}
         />
       </div>
