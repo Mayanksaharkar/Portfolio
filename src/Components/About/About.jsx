@@ -12,6 +12,7 @@ function About() {
                 src="https://res.cloudinary.com/defcox81s/image/upload/v1747334932/ChatGPT_Image_May_16_2025_12_06_31_AM_y6dme7.png"
                 alt="Your Photo"
                 class="w-full h-full object-cover"
+                loading="lazy"
               />
             </div>
           </div>
