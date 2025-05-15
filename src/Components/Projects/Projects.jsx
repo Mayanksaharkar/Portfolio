@@ -1,16 +1,15 @@
 import Card from "./Card";
 import PageContainer from "../PageContainer";
-import { desc } from "framer-motion/client";
-import Projects from "./Projects";
-function Portfolio() {
+import projects from "./data";
+function Projects() {
   return (
     <PageContainer>
       <div className="px-4  ">
         <h3 className="lg:text-3xl md:text-md sm:text-xl font-extrabold text-neutral py-4">
-          my portfolio
+          my projects
         </h3>
         <div className="lg:gap-6 grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2">
-          {Projects.map((project) => (
+          {projects.map((project) => (
             <div className="w-full h-full my-2 col-span-1" key={project.gh}>
               <Card
                 key={project.title}
@@ -28,4 +27,4 @@ function Portfolio() {
   );
 }
 
-export default Portfolio;
+export default Projects;

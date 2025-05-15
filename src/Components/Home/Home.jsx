@@ -1,6 +1,5 @@
 import { use } from "react";
 import PageContainer from "../PageContainer";
-import Portfolio from "../Portfolio/Portfolio";
 import Skills from "../Skills/Skills";
 import { CardContainer } from "../ui/3d-card";
 import Svg from "./Svg";
@@ -9,7 +8,7 @@ import Education from "../Education/Education";
 function Home() {
   const nav = useNavigate();
   return (
- <PageContainer>
+    <PageContainer>
       <section className="z-0 min-h-[90dvh] flex flex-col justify-center items-center bg-transparent">
         {/* Wrap content in a two-column grid on large screens */}
         <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-4">
@@ -24,9 +23,9 @@ function Home() {
             </p>
             <button
               className="btn bg-primary text-base-100 shadow-base-300 hover:text-primary shadow-lg border-none rounded-lg lg:text-2xl md:text-md sm:text-sm"
-              onClick={() => nav("/portfolio")}
+              onClick={() => nav("/projects")}
             >
-              Browse PortFolio
+              Browse Projects
             </button>
           </div>
 

@@ -25,8 +25,8 @@ function Education() {
   return (
     <PageContainer>
       <div className="px-4 py-12">
-        <h3 className="lg:text-3xl text-xl font-extrabold text-primary mb-4 text-left px-3">
-          education
+        <h3 className="lg:text-4xl text-xl font-extrabold text-primary mb-4 text-left px-3">
+          Education
         </h3>
         <div className="relative  mx-auto">
           <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-primary/20 rounded"></div>

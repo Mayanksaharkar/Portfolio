@@ -6,15 +6,15 @@ import ParticleBackground from "react-particle-backgrounds";
 function Layout() {
   const settings2 = {
     particle: {
-      particleCount: 150,
+      particleCount: 200,
       color: "#6587ff",
       maxSize: 3,
     },
     velocity: {
       directionAngle: 180,
       directionAngleVariance: 60,
-      minSpeed: 0.1,
-      maxSpeed: 0.5,
+      minSpeed: 0.3,
+      maxSpeed: 0.8,
     },
     opacity: {
       minOpacity: 0,

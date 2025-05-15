@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 function Footer() {
   return (
-    <footer className="footer p-10 bg-base-300  text-neutral">
+    <footer className="footer p-10 lg:px-36  bg-transparent backdrop-blur-sm text-neutral">
       <aside>
         <div>
           <span className="lg:text-4xl font-extrabold text-2xl">Thanks For Visiting!</span>
@@ -15,7 +15,7 @@ function Footer() {
           <a
             href="mailto:mayanksaharkar@gmail.com?subject=Hello!"
             target="_blank"
-            className="btn bg-primary text-base-100 rounded-xl drop-shadow-2xl border-none hover:bg-base-100 hover:text-primary lg:mt-4 lg:text-2xl text-lg"
+            className="btn mt-5 bg-primary text-base-100 rounded-xl drop-shadow-2xl border-none hover:bg-base-100 hover:text-primary lg:mt-4 lg:text-2xl text-lg"
             rel="noreferrer"
           >
             Contact
@@ -67,7 +67,7 @@ function Footer() {
           </a>
         </div>
       </nav>
-      <nav className="opacity-80 ">
+      <nav className="opacity-80  w-full lg:justify-center">
         <header className="footer-title text-primary sm:text-base">Navigation</header>
         <div className="grid grid-flow-row gap-4 lg:text-lg font-semibold ml-4 text-sm">
           <Link

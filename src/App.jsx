@@ -6,7 +6,6 @@ import {
   createBrowserRouter,
 } from "react-router-dom";
 import Home from "./Components/Home/Home";
-import Portfolio from "./Components/Portfolio/Portfolio";
 import About from "./Components/About/About";
 import { AnimatePresence } from "framer-motion";
 import Header from "./Components/Header";
@@ -15,6 +14,7 @@ import Layout from "./Components/Layout";
 import Skills from "./Components/Skills/Skills";
 import Education from "./Components/Education/Education";
 import ScrollToTop from "./Components/ScrollToTop";
+import Projects from "./Components/Projects/Projects";
 AnimatePresence;
 function App() {
   const router = createBrowserRouter([
@@ -31,8 +31,8 @@ function App() {
           element: <Home />,
         },
         {
-          path: "/portfolio",
-          element: <Portfolio />,
+          path: "/projects",
+          element: <Projects />,
         },
         {
           path: "/skills",

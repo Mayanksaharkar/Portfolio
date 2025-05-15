@@ -41,7 +41,7 @@ function Header() {
         color="blue-gray"
         className="p-1 font-normal"
       >
-        <Link to="/home" className="flex items-center text-base-content">
+        <Link to="/home" onClick={()=>{setOpenNav(false)}} className="flex items-center text-base-content">
           Home
         </Link>
       </Typography>
@@ -51,8 +51,8 @@ function Header() {
         color="blue-gray"
         className="p-1 font-normal"
       >
-        <Link to="/portfolio" className="flex items-center text-base-content">
-          Portfolio
+        <Link to="/projects" onClick={()=>{setOpenNav(false)}} className="flex items-center text-base-content">
+          Projects
         </Link>
       </Typography>
       <Typography
@@ -61,7 +61,7 @@ function Header() {
         color="blue-gray"
         className="p-1 font-normal"
       >
-        <Link to="/about" className="flex items-center text-base-content">
+        <Link to="/about" onClick={()=>{setOpenNav(false)}} className="flex items-center text-base-content">
           About
         </Link>
       </Typography>
@@ -100,7 +100,6 @@ function Header() {
         color="blue-gray"
         className="p-1 font-normal"
       >
-        {" "}
         <a
           href="mailto:mayanksaharkar@gmail.com?subject=Hello!"
           target="_blank"

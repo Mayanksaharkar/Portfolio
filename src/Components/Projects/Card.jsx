@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 function Card(props) {
   return (
-    <div className="card  bg-base-300 w-full  sm:w-fit rounded-lg ">
+    <div className="card bg-transparent backdrop-blur-sm border-b border-primary shadow-sm shadow-primary    w-full  sm:w-fit rounded-lg ">
       <div className="group relative w-full sm:w-96 rounded-t-lg overflow-hidden">
         <img
           className="w-full bg-blue-400 lg:min-h-64 h-44 object-cover rounded-t-lg hover:scale-110 duration-300 "
