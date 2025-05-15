@@ -35,19 +35,19 @@ function Header() {
   }, []);
 
   const navList = (
-    <ul className="mt-2  mb-4 flex flex-col gap-2 lg:mb-0 lg:mt-0 p-2  lg:flex-row lg:items-center lg:gap-6 lg:text-lg md:text-sm sm:text-sm">
+    <ul className="mt-2 font-extrabold   mb-4 flex flex-col gap-2 lg:mb-0 lg:mt-0 p-2  lg:flex-row lg:items-center lg:gap-6 lg:text-xl text-sm">
       <Typography
         as="li"
         variant="small"
-        color="blue-gray"
-        className="p-1 font-normal"
+        
+        className="p-1  font-myfont font-bold"
       >
         <Link
           to="/home"
           onClick={() => {
             setOpenNav(false);
           }}
-          className="flex items-center text-base-content"
+          className="flex text-neutral items-center  font-myfont"
         >
           Home
         </Link>
@@ -56,14 +56,14 @@ function Header() {
         as="li"
         variant="small"
         color="blue-gray"
-        className="p-1 font-normal"
+        className="p-1 font-bold font-myfont"
       >
         <Link
           to="/projects"
           onClick={() => {
             setOpenNav(false);
           }}
-          className="flex items-center text-base-content"
+          className="flex text-neutral items-center "
         >
           Projects
         </Link>
@@ -72,21 +72,20 @@ function Header() {
         as="li"
         variant="small"
         color="blue-gray"
-        className="p-1 font-normal"
+        className="p-1 text-neutral font-bold font-myfont"
       >
         <Link
           to="/about"
           onClick={() => {
             setOpenNav(false);
           }}
-          className="flex items-center text-base-content"
+          className="flex text-neutral items-center "
         >
           About
         </Link>
       </Typography>
 
       <div className="lg:bg-base-300    lg:rounded-full ">
-        {/* <Spin> */}
         <label className="swap swap-rotate p-2 ">
           <input
             type="checkbox"
