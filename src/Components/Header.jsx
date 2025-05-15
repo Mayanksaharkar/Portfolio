@@ -42,7 +42,13 @@ function Header() {
         color="blue-gray"
         className="p-1 font-normal"
       >
-        <Link to="/home" onClick={()=>{setOpenNav(false)}} className="flex items-center text-base-content">
+        <Link
+          to="/home"
+          onClick={() => {
+            setOpenNav(false);
+          }}
+          className="flex items-center text-base-content"
+        >
           Home
         </Link>
       </Typography>
@@ -52,7 +58,13 @@ function Header() {
         color="blue-gray"
         className="p-1 font-normal"
       >
-        <Link to="/projects" onClick={()=>{setOpenNav(false)}} className="flex items-center text-base-content">
+        <Link
+          to="/projects"
+          onClick={() => {
+            setOpenNav(false);
+          }}
+          className="flex items-center text-base-content"
+        >
           Projects
         </Link>
       </Typography>
@@ -62,7 +74,13 @@ function Header() {
         color="blue-gray"
         className="p-1 font-normal"
       >
-        <Link to="/about" onClick={()=>{setOpenNav(false)}} className="flex items-center text-base-content">
+        <Link
+          to="/about"
+          onClick={() => {
+            setOpenNav(false);
+          }}
+          className="flex items-center text-base-content"
+        >
           About
         </Link>
       </Typography>
@@ -115,7 +133,7 @@ function Header() {
 
   return (
     <>
-      <Navbar className="border-none sticky flex-row shadow-base-200 align-middle justify-between top-0 z-30 h-max max-w-full px-4 py-4 pb-2 lg:px-8 lg:py-2 bg-base-100">
+      <Navbar className="border-none sticky mt-4  z-50 lg:w-[80%] bg-transparent backdrop-blur-lg w-full  lg:rounded-3xl  flex-row shadow-base-300 shadow-md align-middle justify-between top-0  h-max max-w-full px-4 py-4 pb-2 lg:px-8 lg:py-2 ">
         <div className="flex items-center justify-between text-primary  rounded-md">
           <Link
             to={"/"}
