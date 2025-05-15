@@ -41,7 +41,7 @@ const skills = [
           >
             <g
               fill="#6587ff"
-              fill-rule="nonzero"
+              fillRule="nonzero"
               stroke="none"
               stroke-width="1"
               stroke-linecap="butt"
@@ -73,7 +73,7 @@ const skills = [
           >
             <g
               fill="none"
-              fill-rule="nonzero"
+              fillRule="nonzero"
               stroke="none"
               stroke-width="1"
               stroke-linecap="butt"
@@ -145,7 +145,7 @@ const skills = [
           >
             <g
               fill="#6587ff"
-              fill-rule="nonzero"
+              fillRule="nonzero"
               stroke="none"
               stroke-width="1"
               stroke-linecap="butt"
@@ -187,7 +187,7 @@ const skills = [
           >
             <g
               fill="#6587ff"
-              fill-rule="nonzero"
+              fillRule="nonzero"
               stroke="none"
               stroke-width="1"
               stroke-linecap="butt"
@@ -220,7 +220,7 @@ const skills = [
           >
             <g
               fill="#6587ff"
-              fill-rule="nonzero"
+              fillRule="nonzero"
               stroke="none"
               stroke-width="1"
               stroke-linecap="butt"
@@ -266,7 +266,7 @@ const skills = [
           >
             <g
               fill="#6587ff"
-              fill-rule="nonzero"
+              fillRule="nonzero"
               stroke="none"
               stroke-width="1"
               stroke-linecap="butt"
@@ -300,7 +300,7 @@ const skills = [
           >
             <g
               fill="#6587ff"
-              fill-rule="nonzero"
+              fillRule="nonzero"
               stroke="none"
               stroke-width="1"
               stroke-linecap="butt"
@@ -332,7 +332,7 @@ const skills = [
           >
             <g
               fill="#6587ff"
-              fill-rule="nonzero"
+              fillRule="nonzero"
               stroke="none"
               stroke-width="1"
               stroke-linecap="butt"
@@ -364,7 +364,7 @@ const skills = [
           >
             <g
               fill="#6587ff"
-              fill-rule="nonzero"
+              fillRule="nonzero"
               stroke="none"
               stroke-width="1"
               stroke-linecap="butt"
@@ -428,7 +428,7 @@ const skills = [
           >
             <g
               fill="#6587ff"
-              fill-rule="nonzero"
+              fillRule="nonzero"
               stroke="none"
               stroke-width="1"
               stroke-linecap="butt"
@@ -462,7 +462,7 @@ const skills = [
           >
             <g
               fill="#6587ff"
-              fill-rule="nonzero"
+              fillRule="nonzero"
               stroke="none"
               stroke-width="1"
               stroke-linecap="butt"
@@ -494,7 +494,7 @@ const skills = [
           >
             <g
               fill="#6587ff"
-              fill-rule="nonzero"
+              fillRule="nonzero"
               stroke="none"
               stroke-width="1"
               stroke-linecap="butt"
@@ -526,7 +526,7 @@ const skills = [
           >
             <g
               fill="#6587ff"
-              fill-rule="nonzero"
+              fillRule="nonzero"
               stroke="none"
               stroke-width="1"
               stroke-linecap="butt"
@@ -575,7 +575,7 @@ const skills = [
           >
             <g
               fill="none"
-              fill-rule="evenodd"
+              fillRule="evenodd"
               stroke="none"
               stroke-width="1"
               stroke-linecap="butt"
@@ -622,7 +622,7 @@ const skills = [
           >
             <g
               fill="#6587ff"
-              fill-rule="nonzero"
+              fillRule="nonzero"
               stroke="none"
               stroke-width="1"
               stroke-linecap="butt"

@@ -1,33 +1,36 @@
 import { Outlet } from "react-router-dom";
 import Header from "./Header";
 import Footer from "./Footer";
-import ParticleBackground from "react-particle-backgrounds";
-
+import React, { useEffect, useState } from "react";
+import Particles, { initParticlesEngine } from "@tsparticles/react";
+import { loadFull } from "tsparticles";
+import {particlesOptions} from "./particlesOptions";
+import ScrollToTop from "./ScrollToTop";
 function Layout() {
-  const settings2 = {
-    particle: {
-      particleCount: 200,
-      color: "#6587ff",
-      maxSize: 3,
-    },
-    velocity: {
-      directionAngle: 180,
-      directionAngleVariance: 60,
-      minSpeed: 0.3,
-      maxSpeed: 0.8,
-    },
-    opacity: {
-      minOpacity: 0,
-      maxOpacity: 0.5,
-      opacityTransitionTime: 10000,
-    },
-  };
+  
+
+  
+  const [init, setInit] = useState(false);
+
+  useEffect(() => {
+    if (init) {
+      return;
+    }
+
+    initParticlesEngine(async (engine) => {
+      await loadFull(engine);
+    }).then(() => {
+      setInit(true);
+    });
+  }, []);
 
   return (
     <div
       style={{ position: "relative", minHeight: "100vh", overflow: "hidden" }}
-      className="flex flex-col justify-between w-full items-center" 
+      className="flex flex-col justify-between w-full items-center"
     >
+      {init && <Particles options={particlesOptions} />}
+      <ScrollToTop smooth={true} duration={1000} />
       <div
         style={{
           position: "absolute",
@@ -37,9 +40,7 @@ function Layout() {
           height: "100%",
           zIndex: 0,
         }}
-      >
-        <ParticleBackground settings={settings2} />
-      </div>
+      ></div>
 
       <div
         className="top-0 z-10 backdrop-blur-sm lg:w-[80%] w-full border border-neutral-content lg:rounded-3xl bg-opacity-50"
