@@ -17,6 +17,7 @@
     "flowbite-react": "^0.7.2",
     "framer-motion": "^11.2.10",
     "react": "^18.2.0",
+    "react-animated-cursor": "^2.11.2",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.21.3",
     "tailwind-merge": "^2.3.0",

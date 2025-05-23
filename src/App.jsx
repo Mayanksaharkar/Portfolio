@@ -1,8 +1,5 @@
 import React, { useState } from "react";
-import {
-  RouterProvider,
-  createBrowserRouter,
-} from "react-router-dom";
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Home from "./Components/Home/Home";
 import About from "./Components/About/About";
 import Layout from "./Components/Layout";
@@ -10,6 +7,7 @@ import Skills from "./Components/Skills/Skills";
 import Education from "./Components/Education/Education";
 import Projects from "./Components/Projects/Projects";
 import SplashScreen from "./Components/SplashScreen";
+import AnimatedCursor from "react-animated-cursor";
 
 function App() {
   const [showSplash, setShowSplash] = useState(true);
@@ -51,7 +49,22 @@ function App() {
     return <SplashScreen onFinish={() => setShowSplash(false)} />;
   }
 
-  return <RouterProvider router={router} />;
+  return (
+    <>
+   <AnimatedCursor
+        innerSize={12}
+        outerSize={32}
+        color="101,135,255"
+        outerAlpha={0.3}
+        innerScale={1}
+        outerScale={2}
+        outerStyle={{
+          mixBlendMode: 'exclusion',
+        }}
+      />
+      <RouterProvider router={router} />
+    </>
+  );
 }
 
 export default App;

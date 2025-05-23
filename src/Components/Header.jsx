@@ -136,7 +136,7 @@ function Header() {
         <div className="flex items-center justify-between text-primary  rounded-md">
           <Link
             to={"/"}
-            className="mr-4 cursor-pointer py-1.5  font-bold lg:text-2xl md:text-lg sm:text-md"
+            className="mr-4  py-1.5  font-bold lg:text-2xl md:text-lg sm:text-md"
           >
             Mayank Saharkar
           </Link>
