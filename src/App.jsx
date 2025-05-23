@@ -54,13 +54,21 @@ function App() {
    <AnimatedCursor
         innerSize={12}
         outerSize={32}
-        color="101,135,255"
+        color="101, 135, 255"
+        outerColor="101, 135, 255"
         outerAlpha={0.3}
         innerScale={1}
         outerScale={2}
-        outerStyle={{
-          mixBlendMode: 'exclusion',
-        }}
+        clickables={[
+          "a",
+          "button",
+          ".link",
+          ".link-2",
+          ".link-3",
+          ".link-4",
+          ".link-5",
+          ".link-6",
+        ]}
       />
       <RouterProvider router={router} />
     </>

@@ -4,6 +4,7 @@
 
 .splash-screen {
   animation: fadeOut 1s ease-in-out forwards;
+  cursor: none;
 }
 
 @keyframes fadeOut {

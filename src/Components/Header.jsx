@@ -89,13 +89,13 @@ function Header() {
         <label className="swap swap-rotate p-2 ">
           <input
             type="checkbox"
-            className="theme-controller"
+            className="theme-controller cursor-none"
             value="synthwave"
             onChange={() => setIsdark(!isdark)}
           />
 
           <svg
-            className="swap-on fill-primary w-10 h-10"
+            className="swap-on fill-primary w-10 h-10 cursor-none"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
           >
@@ -103,7 +103,7 @@ function Header() {
           </svg>
 
           <svg
-            className="swap-off fill-primary w-10 h-10"
+            className="swap-off fill-primary w-10 h-10 cursor-none"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
           >
