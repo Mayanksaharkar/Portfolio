@@ -10,8 +10,8 @@ function Home() {
   return (
     <PageContainer>
       <section className="z-40 min-h-[80dvh] mb-16 flex flex-col justify-center items-center bg-transparent">
-        <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-4">
-          <div className="px-4 lg:px-8 mt-4 lg:mt-0">
+        <div className="grid grid-cols-1 lg:grid-cols-2 items-center ">
+          <div className="  mt-4 lg:mt-0">
             <h1 className="max-w-2xl mb-4  text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl">
               <span className="text-neutral my-1">Hey there, I'm</span>
               <span className="text-primary my-4  "> Mayank</span>

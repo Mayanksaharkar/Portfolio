@@ -35,8 +35,8 @@ function Header() {
   }, []);
 
   const navList = (
-    <ul className="mt-2 mb-4 flex flex-col gap-1 lg:mb-0 lg:mt-0 p-6 lg:p-2 lg:flex-row lg:items-center lg:gap-6 lg:text-xl text-base font-extrabold 
-                 lg:bg-transparent lg:shadow-none lg:border-none lg:rounded-none
+    <ul className="mt-2 mb-4 flex flex-col gap-4 lg:mb-0 lg:mt-0 p-6 lg:p-2 lg:flex-row lg:items-center lg:gap-6 lg:text-xl text-base font-extrabold 
+                 lg:bg-transparent lg:shadow-none lg:border-none lg:rounded-none lg:backdrop-blur-none
                  bg-base-100/95 backdrop-blur-xl shadow-2xl border border-primary/10 rounded-3xl 
                  transition-all duration-300 ease-in-out max-w-sm mx-auto lg:max-w-none">
     
@@ -83,10 +83,10 @@ function Header() {
       </Link>
     </Typography>
 
-    
-    <div className="flex justify-center items-center my-0 lg:my-0">
-      <div className="bg-primary/5 p-2 rounded-2xl border border-primary/20 shadow-lg lg:bg-base-300 lg:rounded-full lg:border-none lg:shadow-none">
-        <label className="swap swap-rotate p-3 lg:p-2 rounded-xl cursor-pointer  transition-colors duration-200">
+    {/* Theme Toggle */}
+    <div className="flex justify-center items-center my-4 lg:my-0">
+      <div className="bg-primary/5 p-2 rounded-2xl border border-primary/20 shadow-lg lg:bg-transparent lg:rounded-full lg:border-none lg:shadow-none">
+        <label className="swap swap-rotate p-3 lg:p-2 rounded-xl cursor-pointer transition-colors duration-200 hover:bg-primary/10">
           <input
             type="checkbox"
             className="theme-controller"
@@ -111,7 +111,7 @@ function Header() {
       </div>
     </div>
 
-    
+    {/* Contact Button */}
     <div className="flex justify-center items-center mt-4 lg:mt-0">
       <Typography
         as="li"
