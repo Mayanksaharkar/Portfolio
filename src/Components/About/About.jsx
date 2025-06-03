@@ -5,8 +5,8 @@ function About() {
   return (
     <PageContainer>
       <main class="max-w-5xl mx-auto px-4 md:px-8 py-12">
-        <div class="grid md:grid-cols-3 gap-12">
-          <div class="md:col-span-1 flex flex-col items-center">
+        {/* <div class="grid md:grid-cols-3 gap-12"> */}
+          {/* <div class="md:col-span-1 flex flex-col items-center">
             <div class="w-full max-w-xs shadow-base-300 border-4 border-base-300 aspect-square rounded-full overflow-hidden shadow-lg mb-6">
               <img
                 src="https://res.cloudinary.com/defcox81s/image/upload/v1747334932/ChatGPT_Image_May_16_2025_12_06_31_AM_y6dme7.png"
@@ -15,7 +15,7 @@ function About() {
                 loading="lazy"
               />
             </div>
-          </div>
+          </div> */}
 
           <div class="md:col-span-2">
             <h1 class="text-4xl font-bold text-secondary mb-2">
@@ -96,7 +96,7 @@ function About() {
               </a>
             </div>
           </div>
-        </div>
+        {/* </div> */}
       </main>
     </PageContainer>
   );
