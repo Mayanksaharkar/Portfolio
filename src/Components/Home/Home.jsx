@@ -11,14 +11,14 @@ function Home() {
     <PageContainer>
       <section className="z-40 min-h-[80dvh] mb-16 flex flex-col justify-center items-center bg-transparent">
         <div className="grid grid-cols-1 lg:grid-cols-2 items-center ">
-          <div className="  mt-4 lg:mt-0">
+          <div className="lg:px-0 px-4  mt-4 lg:mt-0">
             <h1 className="max-w-2xl mb-4  text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl">
               <span className="text-neutral my-1">Hey there, I'm</span>
               <span className="text-primary my-4  "> Mayank</span>
             </h1>
-            <div className="max-w-2xl mb-6 font-light text-neutral flex-row  lg:flex-col space-y-2 lg:space-y-4">
+            <div className="max-w-2xl  mb-6 font-light text-neutral flex-row  lg:flex-col space-y-2 lg:space-y-4">
               <button
-                className="btn lg:mr-0 mr-2  bg-primary my-2 text-base-100 shadow-base-300 hover:text-primary shadow-lg border-none rounded-lg lg:text-2xl md:text-md sm:text-sm"
+                className="btn mr-2 bg-primary my-2 text-base-100 shadow-base-300 hover:text-primary shadow-lg border-none rounded-lg lg:text-2xl md:text-md sm:text-sm"
                 onClick={() => nav("/projects")}
               >
                 My Projects

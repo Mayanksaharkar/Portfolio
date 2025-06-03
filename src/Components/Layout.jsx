@@ -67,7 +67,7 @@ function Layout() {
        {/* <div className="lg:w-[80%] bg-transparent backdrop-blur-sm w-full border border-neutral-content lg:rounded-3xl "> */}
       <Header />
       {/* </div> */}
-      <main className="flex-grow  z-40">
+      <main className="flex-grow min-h-[100dvh]  z-40">
         <Outlet />
       </main>
       <Footer />
