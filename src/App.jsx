@@ -54,7 +54,12 @@ function App() {
   ]);
 
   if (showSplash) {
-    return <SplashScreen onFinish={() => setShowSplash(false)} />;
+
+    return( 
+    <div className="flex items-center justify-center min-h-[100dvh] bg-primary ">
+    <SplashScreen onFinish={() => setShowSplash(false)} />
+    </div>
+    );
   }
 
   return (

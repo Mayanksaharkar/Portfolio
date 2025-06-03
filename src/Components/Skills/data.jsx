@@ -449,7 +449,7 @@ const skills = [
         ),
       },
     ],
-    programinglanguages: [
+    languages: [
       {
         name: "JavaScript",
         logo: (

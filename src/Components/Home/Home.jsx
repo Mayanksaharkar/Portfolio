@@ -12,22 +12,19 @@ function Home() {
       <section className="z-40 min-h-[80dvh] mb-16 flex flex-col justify-center items-center bg-transparent">
         <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-4">
           <div className="px-4 lg:px-8 mt-4 lg:mt-0">
-            <h1 className="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl">
-              <span className="text-neutral">🙋‍♂️ Hi, I&apos;m</span>
-              <span className="text-primary"> Mayank</span>
+            <h1 className="max-w-2xl mb-4  text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl">
+              <span className="text-neutral my-1">Hey there, I'm</span>
+              <span className="text-primary my-4  "> Mayank</span>
             </h1>
-            <p className="max-w-2xl mb-6 font-light lg:mb-8 md:text-lg lg:text-xl">
-              Code that works. Solutions that matter
-            </p>
-            <div>
+            <div className="max-w-2xl mb-6 font-light text-neutral flex-row  lg:flex-col space-y-2 lg:space-y-4">
               <button
-                className="btn bg-primary text-base-100 shadow-base-300 hover:text-primary shadow-lg border-none rounded-lg lg:text-2xl md:text-md sm:text-sm"
+                className="btn lg:mr-0 mr-2  bg-primary my-2 text-base-100 shadow-base-300 hover:text-primary shadow-lg border-none rounded-lg lg:text-2xl md:text-md sm:text-sm"
                 onClick={() => nav("/projects")}
               >
-                Browse Projects
+                My Projects
               </button>
               <a
-                className="btn btn-outline border-primary text-primary hover:bg-transparent hover:text-primary hover:border-primary hover:shadow-lg hover:shadow-primary shadow-base-300  shadow-lg rounded-lg lg:text-2xl md:text-md sm:text-sm ml-4"
+                className="btn btn-outline my-2 border-primary text-primary hover:bg-transparent hover:text-primary hover:border-primary hover:shadow-lg hover:shadow-primary shadow-base-300  shadow-lg rounded-lg lg:text-2xl md:text-md sm:text-sm lg:ml-2"
                 href="https://drive.google.com/file/d/1TCR_oInFSfxtj5nMAHJv-JXiM3wWe1hS/view?usp=drive_link"
                 target="_blank"
               >
@@ -39,10 +36,10 @@ function Home() {
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  class="lucide lucide-download-icon lucide-download"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="lucide lucide-download-icon lucide-download"
                 >
                   <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
                   <polyline points="7 10 12 15 17 10" />
