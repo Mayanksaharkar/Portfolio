@@ -15,7 +15,7 @@ const projects = [
     title: "Legal Assistant",
     img: "https://res.cloudinary.com/defcox81s/image/upload/v1749501322/legalAssistant_qsjstn.webp",
     gh: "https://github.com/Mayanksaharkar/LegalAssitant",
-    description: "MERN | OpenAI | TailwindCSS",
+    description: "MERN | Gemini API | TailwindCSS",
   },
   {
     title: "Time Table Generator",
