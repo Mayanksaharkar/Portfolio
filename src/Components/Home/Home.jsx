@@ -25,7 +25,7 @@ function Home() {
               </button>
               <a
                 className="btn btn-outline my-2 border-primary text-primary hover:bg-transparent hover:text-primary hover:border-primary hover:shadow-lg hover:shadow-primary shadow-base-300  shadow-lg rounded-lg lg:text-2xl md:text-md sm:text-sm lg:ml-2"
-                href="https://drive.google.com/file/d/1TCR_oInFSfxtj5nMAHJv-JXiM3wWe1hS/view?usp=drive_link"
+                href="https://drive.google.com/file/d/11BJs2lO8AhMXMnKjl3QEdvZB-gARvvJ8/view?usp=sharing"
                 target="_blank"
               >
                 Resume
