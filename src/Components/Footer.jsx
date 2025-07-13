@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
-function Footer() {
+import { memo } from "react";
+
+const Footer = memo(function Footer() {
   return (
     <footer className="footer mt-4 bg-base-300/65 p-6 sm:p-8 md:p-10 lg:px-36  backdrop-blur-sm text-neutral">
       <aside>
@@ -97,6 +99,6 @@ function Footer() {
       </nav>
     </footer>
   );
-}
+});
 
 export default Footer;

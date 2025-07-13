@@ -1,7 +1,7 @@
 import React, { memo } from "react";
 
 /* eslint-disable react/prop-types */
-const Card = memo(function Card({ img, title, description, gh }) {
+const Card = memo(function Card({ img, title, description, gh, loading = "lazy" }) {
   return (
     <div className="card bg-transparent backdrop-blur-sm border-b border-primary shadow-sm shadow-primary w-full sm:w-fit rounded-lg">
       <div className="group relative w-full sm:w-96 rounded-t-lg overflow-hidden">
@@ -9,7 +9,8 @@ const Card = memo(function Card({ img, title, description, gh }) {
           className="w-full bg-blue-400 lg:min-h-64 h-44 object-cover rounded-t-lg hover:scale-110 duration-300"
           src={img}
           alt={title || "Project Image"}
-          loading="lazy"
+          loading={loading}
+          decoding="async"
         />
       </div>
 

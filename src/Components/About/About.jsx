@@ -1,31 +1,20 @@
 import React from "react";
 import PageContainer from "../PageContainer";
+import { memo } from "react";
 
-function About() {
+const About = memo(function About() {
   return (
     <PageContainer>
-      <main class="max-w-5xl mx-auto px-4 md:px-8 py-12">
-        {/* <div class="grid md:grid-cols-3 gap-12"> */}
-          {/* <div class="md:col-span-1 flex flex-col items-center">
-            <div class="w-full max-w-xs shadow-base-300 border-4 border-base-300 aspect-square rounded-full overflow-hidden shadow-lg mb-6">
-              <img
-                src="https://res.cloudinary.com/defcox81s/image/upload/v1747334932/ChatGPT_Image_May_16_2025_12_06_31_AM_y6dme7.png"
-                alt="Your Photo"
-                class="w-full h-full object-cover"
-                loading="lazy"
-              />
-            </div>
-          </div> */}
-
-          <div class="md:col-span-2">
-            <h1 class="text-4xl font-bold text-secondary mb-2">
+      <main className="max-w-5xl mx-auto px-4 md:px-8 py-12">
+          <div className="md:col-span-2">
+            <h1 className="text-4xl font-bold text-secondary mb-2">
               Hi, I'm Mayank
             </h1>
-            <p class="text-xl font-medium text-primary mb-8">
+            <p className="text-xl font-medium text-primary mb-8">
               Software Developer | Problem Solver | Tech Enthusiast
             </p>
 
-            <div class="space-y-4 mb-8">
+            <div className="space-y-4 mb-8">
               <p>
                 As a software developer, I focus on building full-stack
                 applications that are efficient, maintainable, and
@@ -33,11 +22,12 @@ function About() {
               </p>
             </div>
 
-            <div class="flex space-x-4 mt-4">
+            <div className="flex space-x-4 mt-4">
               <a
                 target="_blank"
                 href="https://www.linkedin.com/in/mayank-saharkar-508038275"
-                class="bg-base-300 text-gray-700 hover:bg-primary hover:text-white transition-colors rounded-full w-10 h-10 flex items-center justify-center"
+                className="bg-base-300 text-gray-700 hover:bg-primary hover:text-white transition-colors rounded-full w-10 h-10 flex items-center justify-center"
+                rel="noopener noreferrer"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -57,7 +47,8 @@ function About() {
               </a>
               <a
                 href="https://github.com/Mayanksaharkar"
-                class="bg-base-300 text-gray-700 hover:bg-primary hover:text-white transition-colors rounded-full w-10 h-10 flex items-center justify-center"
+                className="bg-base-300 text-gray-700 hover:bg-primary hover:text-white transition-colors rounded-full w-10 h-10 flex items-center justify-center"
+                rel="noopener noreferrer"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -76,7 +67,8 @@ function About() {
 
               <a
                 href="https://x.com/MayankSaharkar"
-                class="bg-base-300 text-gray-700 hover:bg-primary hover:text-white transition-colors rounded-full w-10 h-10 flex items-center justify-center"
+                className="bg-base-300 text-gray-700 hover:bg-primary hover:text-white transition-colors rounded-full w-10 h-10 flex items-center justify-center"
+                rel="noopener noreferrer"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -96,10 +88,9 @@ function About() {
               </a>
             </div>
           </div>
-        {/* </div> */}
       </main>
     </PageContainer>
   );
-}
+});
 
 export default About;

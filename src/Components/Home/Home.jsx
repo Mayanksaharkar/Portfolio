@@ -1,12 +1,18 @@
-import { use } from "react";
 import PageContainer from "../PageContainer";
 import Skills from "../Skills/Skills";
 import { CardContainer } from "../ui/3d-card";
 import Svg from "./Svg";
 import { useNavigate } from "react-router-dom";
 import Education from "../Education/Education";
-function Home() {
+import { memo, useCallback } from "react";
+
+const Home = memo(function Home() {
   const nav = useNavigate();
+  
+  const handleProjectsClick = useCallback(() => {
+    nav("/projects");
+  }, [nav]);
+
   return (
     <PageContainer>
       <section className="z-40 min-h-[80dvh] mb-16 flex flex-col justify-center items-center bg-transparent">
@@ -19,7 +25,7 @@ function Home() {
             <div className="max-w-2xl  mb-6 font-light text-neutral flex-row  lg:flex-col space-y-2 lg:space-y-4">
               <button
                 className="btn mr-2 bg-primary my-2 text-base-100 shadow-base-300 hover:text-primary shadow-lg border-none rounded-lg lg:text-2xl md:text-md sm:text-sm"
-                onClick={() => nav("/projects")}
+                onClick={handleProjectsClick}
               >
                 My Projects
               </button>
@@ -70,6 +76,6 @@ function Home() {
       </section>
     </PageContainer>
   );
-}
+});
 
 export default Home;

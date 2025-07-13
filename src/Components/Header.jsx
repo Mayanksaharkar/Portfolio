@@ -1,7 +1,5 @@
 import { Link } from "react-router-dom";
-import React from "react";
-import { useState, useEffect } from "react";
-// import Spin from "react-reveal/Spin";
+import React, { useState, useEffect, useCallback, memo } from "react";
 import {
   Navbar,
   MobileNav,
@@ -10,11 +8,12 @@ import {
   Collapse,
 } from "@material-tailwind/react";
 
-function Header() {
+const Header = memo(function Header() {
   const [isdark, setIsdark] = useState(
     JSON.parse(localStorage.getItem("isdark"))
   );
-  // eslint-disable-next-line no-undef
+  const [openNav, setOpenNav] = useState(false);
+
   useEffect(() => {
     localStorage.setItem("isdark", JSON.stringify(isdark));
     const body = document.getElementsByTagName("body")[0];
@@ -25,9 +24,19 @@ function Header() {
     }
   }, [isdark]);
 
-  const [openNav, setOpenNav] = React.useState(false);
+  const handleThemeToggle = useCallback(() => {
+    setIsdark(!isdark);
+  }, [isdark]);
 
-  React.useEffect(() => {
+  const handleNavToggle = useCallback(() => {
+    setOpenNav(!openNav);
+  }, [openNav]);
+
+  const closeNav = useCallback(() => {
+    setOpenNav(false);
+  }, []);
+
+  useEffect(() => {
     window.addEventListener(
       "resize",
       () => window.innerWidth >= 960 && setOpenNav(false)
@@ -48,7 +57,7 @@ function Header() {
     >
       <Link
         to="/home"
-        onClick={() => setOpenNav(false)}
+        onClick={closeNav}
         className="flex text-neutral items-center font-myfont justify-center lg:justify-start py-2 px-3"
       >
         Home
@@ -62,7 +71,7 @@ function Header() {
     >
       <Link
         to="/projects"
-        onClick={() => setOpenNav(false)}
+        onClick={closeNav}
         className="flex text-neutral items-center justify-center lg:justify-start py-2 px-3"
       >
         Projects
@@ -76,7 +85,7 @@ function Header() {
     >
       <Link
         to="/about"
-        onClick={() => setOpenNav(false)}
+        onClick={closeNav}
         className="flex text-neutral items-center justify-center lg:justify-start py-2 px-3"
       >
         About
@@ -91,7 +100,7 @@ function Header() {
             type="checkbox"
             className="theme-controller"
             value="synthwave"
-            onChange={() => setIsdark(!isdark)}
+            onChange={handleThemeToggle}
           />
           <svg
             className="swap-on fill-primary w-8 h-8 lg:w-10 lg:h-10 transition-transform duration-200 hover:scale-110"
@@ -152,7 +161,7 @@ function Header() {
               variant="text"
               className=" items-center h-full justify-center flex text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
               ripple={false}
-              onClick={() => setOpenNav(!openNav)}
+              onClick={handleNavToggle}
             >
               {openNav ? (
                 <svg
@@ -191,6 +200,6 @@ function Header() {
       </Navbar>
     </>
   );
-}
+});
 
 export default Header;

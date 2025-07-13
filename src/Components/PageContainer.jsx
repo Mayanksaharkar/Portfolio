@@ -1,36 +1,48 @@
 import { motion, AnimatePresence } from "framer-motion";
+import { memo } from "react";
 
-// Move outside to avoid re-creation
+// Optimized animation variants
 const containerVariants = {
   hidden: {
     opacity: 0,
-    x: 100,
+    x: 50, // Reduced distance for smoother animation
   },
   visible: {
     opacity: 1,
     x: 0,
     transition: {
-      duration: 0.5, // shorter = snappier
-      ease: [0.25, 0.1, 0.25, 1], // smoother easing (equivalent to ease-in-out)
+      duration: 0.3, // Faster animation
+      ease: "easeOut",
+    },
+  },
+  exit: {
+    opacity: 0,
+    x: -50,
+    transition: {
+      duration: 0.2,
+      ease: "easeIn",
     },
   },
 };
 
-function PageContainer({ children }) {
+const PageContainer = memo(function PageContainer({ children }) {
   return (
     <AnimatePresence mode="wait">
       <motion.div
         key={typeof window !== "undefined" ? window.location.pathname : "page"}
         initial="hidden"
         animate="visible"
-        exit="hidden"
+        exit="exit"
         variants={containerVariants}
-        style={{ willChange: "opacity, transform" }} // hint browser for GPU acceleration
+        style={{ 
+          willChange: "opacity, transform",
+          backfaceVisibility: "hidden", // Prevent flickering
+        }}
       >
         {children}
       </motion.div>
     </AnimatePresence>
   );
-}
+});
 
 export default PageContainer;

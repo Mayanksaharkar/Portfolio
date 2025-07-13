@@ -1,4 +1,5 @@
 import PageContainer from "../PageContainer";
+import { memo, useMemo } from "react";
 
 const educationList = [
   {
@@ -21,7 +22,9 @@ const educationList = [
   },
 ];
 
-function Education() {
+const Education = memo(function Education() {
+  const memoizedEducation = useMemo(() => educationList, []);
+
   return (
     <PageContainer>
       <div className="px-4 py-12">
@@ -32,7 +35,7 @@ function Education() {
           <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-primary/20 rounded"></div>
 
           <ul className="space-y-20">
-            {educationList.map((edu, idx) => {
+            {memoizedEducation.map((edu, idx) => {
               const isLeft = idx % 2 === 0;
 
               return (
@@ -68,6 +71,6 @@ function Education() {
       </div>
     </PageContainer>
   );
-}
+});
 
 export default Education;

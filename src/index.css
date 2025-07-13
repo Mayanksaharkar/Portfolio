@@ -2,17 +2,40 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Optimize font loading */
+@layer base {
+  html {
+    font-display: swap;
+  }
+}
+
+/* Reduce motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Optimize image loading */
+img {
+  content-visibility: auto;
+}
+
 .splash-screen {
   animation: fadeOut 1s ease-in-out forwards;
   cursor: none;
 }
 
 @keyframes fadeOut {
-    0% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-    }
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 

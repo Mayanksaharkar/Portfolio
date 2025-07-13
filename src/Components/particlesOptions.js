@@ -1,5 +1,13 @@
 const particlesOptions = {
+  background: {
+    opacity: 0,
+  },
+  fpsLimit: 60,
   interactivity: {
+    detectsOn: "window",
+    events: {
+      resize: true,
+    },
     modes: {
       repulse: {
         distance: 200,
@@ -21,14 +29,15 @@ const particlesOptions = {
         default: "bounce",
       },
       random: false,
-      speed: 0.7,
+      speed: 0.5, // Reduced for better performance
       straight: false,
     },
     number: {
       density: {
         enable: true,
+        area: 1000, // Reduced particle density
       },
-      value: 80,
+      value: 50, // Reduced particle count
     },
     opacity: {
       value: 0.3,
@@ -38,9 +47,11 @@ const particlesOptions = {
     },
     size: {
       random: true,
-      value: 5,
-
+      value: 3, // Smaller particles for better performance
     },
   },
+  detectRetina: true,
+  smooth: true,
 };
+
 export { particlesOptions };
