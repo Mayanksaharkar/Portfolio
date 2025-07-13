@@ -44,21 +44,22 @@ const Header = memo(function Header() {
   }, []);
 
   const navList = (
-    <ul className="mt-2 mb-4 flex flex-col gap-4 lg:mb-0 lg:mt-0 p-6 lg:p-2 lg:flex-row lg:items-center lg:gap-6 lg:text-xl text-base font-extrabold 
+    <ul className="mt-2 mb-4 flex flex-col gap-4 lg:mb-0 lg:mt-0 p-6 lg:p-2 lg:flex-row lg:items-center lg:gap-0  lg:text-xl text-base font-extrabold 
                  lg:bg-transparent lg:shadow-none lg:border-none lg:rounded-none lg:backdrop-blur-none
-                 bg-base-100/95 backdrop-blur-xl shadow-2xl border border-primary/10 rounded-3xl 
+                 bg-base-100/95 backdrop-blur-xl border border-primary/10 rounded-3xl 
                  transition-all duration-300 ease-in-out max-w-sm mx-auto lg:max-w-none">
     
     
     <Typography
       as="li"
       variant="small"
-      className="p-2 font-myfont font-bold transition-all duration-200 rounded-xl hover:bg-primary/10 hover:scale-105"
+      className="p-1 sm:p-2 md:p-2 lg:p-2 xl:p-3 font-myfont font-bold transition-all duration-200 rounded-xl hover:bg-primary/10 hover:scale-105"
     >
       <Link
         to="/home"
         onClick={closeNav}
-        className="flex text-neutral items-center font-myfont justify-center lg:justify-start py-2 px-3"
+        className="flex text-neutral items-center font-myfont justify-center lg:justify-start 
+                 py-1 px-2 sm:py-2 sm:px-3 md:py-2 md:px-3 lg:py-2 lg:px-3 xl:py-3 xl:px-4"
       >
         Home
       </Link>
@@ -67,12 +68,13 @@ const Header = memo(function Header() {
     <Typography
       as="li"
       variant="small"
-      className="p-2 font-bold font-myfont transition-all duration-200 rounded-xl hover:bg-primary/10 hover:scale-105"
+      className="p-1 sm:p-2 md:p-2 lg:p-2 xl:p-3 font-bold font-myfont transition-all duration-200 rounded-xl hover:bg-primary/10 hover:scale-105"
     >
       <Link
         to="/projects"
         onClick={closeNav}
-        className="flex text-neutral items-center justify-center lg:justify-start py-2 px-3"
+        className="flex text-neutral items-center justify-center lg:justify-start 
+                 py-1 px-2 sm:py-2 sm:px-3 md:py-2 md:px-3 lg:py-2 lg:px-3 xl:py-3 xl:px-4"
       >
         Projects
       </Link>
@@ -81,21 +83,22 @@ const Header = memo(function Header() {
     <Typography
       as="li"
       variant="small"
-      className="p-2 text-neutral font-bold font-myfont transition-all duration-200 rounded-xl hover:bg-primary/10 hover:scale-105"
+      className="p-1 sm:p-2 md:p-2 lg:p-2 xl:p-3 text-neutral font-bold font-myfont transition-all duration-200 rounded-xl hover:bg-primary/10 hover:scale-105"
     >
       <Link
         to="/about"
         onClick={closeNav}
-        className="flex text-neutral items-center justify-center lg:justify-start py-2 px-3"
+        className="flex text-neutral items-center justify-center lg:justify-start 
+                 py-1 px-2 sm:py-2 sm:px-3 md:py-2 md:px-3 lg:py-2 lg:px-3 xl:py-3 xl:px-4"
       >
         About
       </Link>
     </Typography>
 
     {/* Theme Toggle */}
-    <div className="flex justify-center items-center my-4 lg:my-0">
-      <div className="bg-primary/5 p-2 rounded-2xl border border-primary/20 shadow-lg lg:bg-transparent lg:rounded-full lg:border-none lg:shadow-none">
-        <label className="swap swap-rotate p-3 lg:p-2 rounded-xl cursor-pointer transition-colors duration-200 hover:bg-primary/10">
+    <div className="flex justify-center items-center my-2 sm:my-3 md:my-4 lg:my-0">
+      <div className="bg-primary/5 p-1 sm:p-2 md:p-2 lg:p-0 xl:p-1 rounded-2xl border border-primary/20 shadow-lg lg:bg-transparent lg:rounded-full lg:border-none lg:shadow-none">
+        <label className="swap swap-rotate p-2 sm:p-3 md:p-3 lg:p-2 xl:p-3 rounded-xl cursor-pointer transition-colors duration-200 hover:bg-primary/10">
           <input
             type="checkbox"
             className="theme-controller"
@@ -103,14 +106,14 @@ const Header = memo(function Header() {
             onChange={handleThemeToggle}
           />
           <svg
-            className="swap-on fill-primary w-8 h-8 lg:w-10 lg:h-10 transition-transform duration-200 hover:scale-110"
+            className="swap-on fill-primary w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 lg:w-10 lg:h-10 xl:w-11 xl:h-11 transition-transform duration-200 hover:scale-110"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
           >
             <path d="M5.64,17l-.71.71a1,1,0,0,0,0,1.41,1,1,0,0,0,1.41,0l.71-.71A1,1,0,0,0,5.64,17ZM5,12a1,1,0,0,0-1-1H3a1,1,0,0,0,0,2H4A1,1,0,0,0,5,12Zm7-7a1,1,0,0,0,1-1V3a1,1,0,0,0-2,0V4A1,1,0,0,0,12,5ZM5.64,7.05a1,1,0,0,0,.7.29,1,1,0,0,0,.71-.29,1,1,0,0,0,0-1.41l-.71-.71A1,1,0,0,0,4.93,6.34Zm12,.29a1,1,0,0,0,.7-.29l.71-.71a1,1,0,1,0-1.41-1.41L17,5.64a1,1,0,0,0,0,1.41A1,1,0,0,0,17.66,7.34ZM21,11H20a1,1,0,0,0,0,2h1a1,1,0,0,0,0-2Zm-9,8a1,1,0,0,0-1,1v1a1,1,0,0,0,2,0V20A1,1,0,0,0,12,19ZM18.36,17A1,1,0,0,0,17,18.36l.71.71a1,1,0,0,0,1.41,0,1,1,0,0,0,0-1.41ZM12,6.5A5.5,5.5,0,1,0,17.5,12,5.51,5.51,0,0,0,12,6.5Zm0,9A3.5,3.5,0,1,1,15.5,12,3.5,3.5,0,0,1,12,15.5Z" />
           </svg>
           <svg
-            className="swap-off fill-primary w-8 h-8 lg:w-10 lg:h-10 transition-transform duration-200 hover:scale-110"
+            className="swap-off fill-primary w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 lg:w-10 lg:h-10 xl:w-11 xl:h-11 transition-transform duration-200 hover:scale-110"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
           >
@@ -128,7 +131,7 @@ const Header = memo(function Header() {
         className="p-2 font-normal"
       >
         <a
-          href="mailto:mayanksaharkar@gmail.com?subject=Hello!"
+          href="mailto:msaharkar04@gmail.com?subject=Hello!"
           target="_blank"
           className="btn bg-primary text-base-100 rounded-2xl drop-shadow-xl border-none 
                      hover:bg-base-100 hover:text-primary hover:scale-105 
