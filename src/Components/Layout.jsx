@@ -6,7 +6,7 @@ import ScrollToTop from "./ScrollToTop";
 
 // Lazy load particles for better initial load performance
 const Particles = lazy(() => import("@tsparticles/react"));
-const ParticlesLoader = lazy(() => import("./ParticlesLoader"));
+const ParticlesLoader = lazy(() => import("./ParticlesLoader.jsx"));
 
 function Layout() {
   const [init, setInit] = useState(false);
