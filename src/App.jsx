@@ -1,13 +1,22 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, lazy, Suspense } from "react";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
-import Home from "./Components/Home/Home";
-import About from "./Components/About/About";
 import Layout from "./Components/Layout";
-import Skills from "./Components/Skills/Skills";
-import Education from "./Components/Education/Education";
-import Projects from "./Components/Projects/Projects";
 import SplashScreen from "./Components/SplashScreen";
 import AnimatedCursor from "react-animated-cursor";
+
+// Lazy load route components for code splitting
+const Home = lazy(() => import("./Components/Home/Home"));
+const About = lazy(() => import("./Components/About/About"));
+const Skills = lazy(() => import("./Components/Skills/Skills"));
+const Education = lazy(() => import("./Components/Education/Education"));
+const Projects = lazy(() => import("./Components/Projects/Projects"));
+
+// Loading component
+const LoadingFallback = () => (
+  <div className="flex items-center justify-center min-h-[50vh]">
+    <div className="loading loading-spinner loading-lg text-primary"></div>
+  </div>
+);
 
 function App() {
   const [showSplash, setShowSplash] = useState(true);
@@ -27,27 +36,51 @@ function App() {
       children: [
         {
           path: "/",
-          element: <Home />,
+          element: (
+            <Suspense fallback={<LoadingFallback />}>
+              <Home />
+            </Suspense>
+          ),
         },
         {
           path: "/home",
-          element: <Home />,
+          element: (
+            <Suspense fallback={<LoadingFallback />}>
+              <Home />
+            </Suspense>
+          ),
         },
         {
           path: "/projects",
-          element: <Projects />,
+          element: (
+            <Suspense fallback={<LoadingFallback />}>
+              <Projects />
+            </Suspense>
+          ),
         },
         {
           path: "/skills",
-          element: <Skills />,
+          element: (
+            <Suspense fallback={<LoadingFallback />}>
+              <Skills />
+            </Suspense>
+          ),
         },
         {
           path: "/education",
-          element: <Education />,
+          element: (
+            <Suspense fallback={<LoadingFallback />}>
+              <Education />
+            </Suspense>
+          ),
         },
         {
           path: "/about",
-          element: <About />,
+          element: (
+            <Suspense fallback={<LoadingFallback />}>
+              <About />
+            </Suspense>
+          ),
         },
       ],
     },

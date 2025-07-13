@@ -4,14 +4,13 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite --host --port 8080",
+    "dev": "vite --host --port 5000",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
   "dependencies": {
     "@material-tailwind/react": "^2.1.8",
-    "@tsparticles/react": "^3.0.0",
     "clsx": "^2.1.1",
     "flowbite": "^2.2.1",
     "flowbite-react": "^0.7.2",
@@ -20,8 +19,8 @@
     "react-animated-cursor": "^2.11.2",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.21.3",
-    "tailwind-merge": "^2.3.0",
-    "tsparticles": "^3.8.1"
+    "tailwind-merge": "^2.3.0"
+    
   },
   "devDependencies": {
     "@types/react": "^18.2.43",
@@ -35,6 +34,7 @@
     "eslint-plugin-react-refresh": "^0.4.5",
     "postcss": "^8.4.33",
     "tailwindcss": "^3.4.1",
+    "terser": "^5.43.1",
     "vite": "^6.3.5"
   }
 }

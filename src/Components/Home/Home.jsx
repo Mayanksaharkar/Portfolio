@@ -1,10 +1,18 @@
 import PageContainer from "../PageContainer";
-import Skills from "../Skills/Skills";
 import { CardContainer } from "../ui/3d-card";
 import Svg from "./Svg";
 import { useNavigate } from "react-router-dom";
-import Education from "../Education/Education";
-import { memo, useCallback } from "react";
+import { memo, useCallback, lazy, Suspense } from "react";
+
+// Lazy load heavy components
+const Skills = lazy(() => import("../Skills/Skills"));
+const Education = lazy(() => import("../Education/Education"));
+
+const LoadingComponent = () => (
+  <div className="flex justify-center py-8">
+    <div className="loading loading-spinner loading-md text-primary"></div>
+  </div>
+);
 
 const Home = memo(function Home() {
   const nav = useNavigate();
@@ -65,13 +73,17 @@ const Home = memo(function Home() {
 
       <section className="w-full flex justify-center items-center">
         <div className="">
-          <Skills />
+          <Suspense fallback={<LoadingComponent />}>
+            <Skills />
+          </Suspense>
         </div>
       </section>
 
       <section className="w-full flex justify-center items-center">
         <div className="">
-          <Education />
+          <Suspense fallback={<LoadingComponent />}>
+            <Education />
+          </Suspense>
         </div>
       </section>
     </PageContainer>

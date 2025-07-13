@@ -146,7 +146,7 @@ const Header = memo(function Header() {
 
   return (
     <>
-      <Navbar className="border-none sticky lg:mt-4 bg-base-100/95  z-50 lg:w-[80%]  backdrop-blur-lg w-full rounded-none  lg:rounded-3xl   flex-row shadow-base-300 shadow-md align-middle justify-between top-0  h-max max-w-full px-4 py-4 pb-2 lg:px-8 lg:py-2 ">
+      <Navbar className="border-none sticky lg:mt-4 bg-base-100/95  z-50 lg:w-[80%]  backdrop-blur-lg w-full rounded-none  lg:rounded-3xl   flex-row shadow-base-300 shadow-md align-middle justify-between top-0  h-max max-w-full px-4 py-4 pb-2 lg:px-8 lg:py-0 ">
         <div className="flex items-center justify-between text-primary  rounded-md">
           <Link
             to={"/"}
