@@ -11,7 +11,7 @@ const About = memo(function About() {
               Hi, I'm Mayank
             </h1>
             <p className="text-xl font-medium text-primary mb-8">
-              Software Developer | Problem Solver | Tech Enthusiast
+              Software Developer | Tech Enthusiast
             </p>
 
             <div className="space-y-4 mb-8">
