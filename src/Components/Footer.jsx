@@ -3,7 +3,7 @@ import { memo } from "react";
 
 const Footer = memo(function Footer() {
   return (
-    <footer className="footer mt-4 bg-base-300/65 p-6 sm:p-8 md:p-10 lg:px-36  backdrop-blur-sm text-neutral">
+    <footer className="footer mt-4 bg-base-300/65 p-6 lg:gap-0 gap-3 sm:p-8 md:p-10 lg:px-36  backdrop-blur-sm text-neutral">
       <aside>
         <div>
           <span className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-extrabold">
@@ -26,7 +26,7 @@ const Footer = memo(function Footer() {
           </a>
         </div>
       </aside>
-      <nav>
+      <nav >
         <header className="footer-title text-primary text-sm sm:text-base md:text-lg">
           Social
         </header>
@@ -72,7 +72,7 @@ const Footer = memo(function Footer() {
           </a>
         </div>
       </nav>
-      <nav className="opacity-80 w-full lg:justify-center mt-6 lg:mt-0">
+      <nav className="opacity-80 w-full lg:justify-center  lg:mt-0">
         <header className="footer-title text-primary text-sm sm:text-base md:text-lg">
           Navigation
         </header>
