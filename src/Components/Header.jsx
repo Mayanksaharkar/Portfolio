@@ -56,7 +56,7 @@ const Header = memo(function Header() {
       className="p-1 sm:p-2 md:p-2 lg:p-2 xl:p-3 font-myfont font-bold transition-all duration-200 rounded-xl hover:bg-primary/10 hover:scale-105"
     >
       <Link
-        to="/home"
+        to="/"
         onClick={closeNav}
         className="flex text-neutral items-center font-myfont justify-center lg:justify-start 
                  py-1 px-2 sm:py-2 sm:px-3 md:py-2 md:px-3 lg:py-2 lg:px-3 xl:py-3 xl:px-4"

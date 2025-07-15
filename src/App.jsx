@@ -43,7 +43,7 @@ function App() {
           ),
         },
         {
-          path: "/home",
+          path: "/",
           element: (
             <Suspense fallback={<LoadingFallback />}>
               <Home />
