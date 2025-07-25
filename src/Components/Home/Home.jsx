@@ -145,7 +145,7 @@ const Home = memo(function Home() {
                            transition-all duration-300 flex items-center justify-center gap-2
                            focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2
                            active:scale-95"
-                  href="https://drive.google.com/file/d/11BJs2lO8AhMXMnKjl3QEdvZB-gARvvJ8/view?usp=sharing"
+                  href="https://drive.google.com/file/d/10Rv0Gl94CodhhvhSmN6YGo5OzguPJTDY/view?usp=sharing"
                   target="_blank"
                   rel="noopener noreferrer"
                   onClick={handleResumeClick}
