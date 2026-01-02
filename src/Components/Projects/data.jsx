@@ -6,8 +6,14 @@ import timeTable from "../../assets/projects/timeTable.avif";
 import webScraping from "../../assets/projects/webScraping.avif";
 import ocr from "../../assets/projects/ocr.avif";
 import linkShortner from "../../assets/projects/linkShortner.avif";
-
+import hrms from "../../assets/projects/hrms.avif"
 const projects = [
+  {
+    title: "HR Management System",
+    img: hrms,
+    gh: "https://github.com/Mayanksaharkar/shrm",
+    description: "NEXTJS | EXPRESSJS ",
+  },
   {
     title: "Ecommerce Website",
     img: ecom,
