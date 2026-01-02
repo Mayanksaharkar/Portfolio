@@ -4,6 +4,8 @@ import Svg from "./Svg";
 import { useNavigate } from "react-router-dom";
 import { memo, useCallback, lazy, Suspense, useEffect, useState } from "react";
 
+
+const cv_url = "https://drive.google.com/file/d/1Bb3yoEX76fRpnJcVNaOthLCLKfUaxRlz/view?usp=drivesdk"
 // Lazy load heavy components with error boundaries
 const Skills = lazy(() => 
   import("../Skills/Skills").catch(() => ({
@@ -145,7 +147,7 @@ const Home = memo(function Home() {
                            transition-all duration-300 flex items-center justify-center gap-2
                            focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2
                            active:scale-95"
-                  href="https://drive.google.com/file/d/10Rv0Gl94CodhhvhSmN6YGo5OzguPJTDY/view?usp=sharing"
+                  href= {cv_url}
                   target="_blank"
                   rel="noopener noreferrer"
                   onClick={handleResumeClick}
