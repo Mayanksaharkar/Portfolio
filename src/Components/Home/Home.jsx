@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 import { memo, useCallback, lazy, Suspense, useEffect, useState } from "react";
 
 
-const cv_url = "https://drive.google.com/file/d/1Bb3yoEX76fRpnJcVNaOthLCLKfUaxRlz/view?usp=drivesdk"
+const cv_url = "https://drive.google.com/file/d/194JvECbgU6wcz5Yfy2Buvxr0lnRP_G4E/view?usp=sharing"
 // Lazy load heavy components with error boundaries
 const Skills = lazy(() => 
   import("../Skills/Skills").catch(() => ({
